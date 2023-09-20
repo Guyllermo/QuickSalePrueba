@@ -4,10 +4,10 @@ import java.sql.Date;
 
 public class Sale {
 
-	private long idSale;
-	private long idPayment;
-	private long idCustomer;
-	private long idEvent;
+	private int idSale;
+	private int idPayment;
+	private int idCustomer;
+	private int idEvent;
 	private Date saleDate;
 	private String operationNumber;
 	private double total;

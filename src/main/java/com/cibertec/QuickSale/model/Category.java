@@ -2,7 +2,7 @@ package com.cibertec.QuickSale.model;
 
 public class Category {
 
-	private long idCategory;
+	private int idCategory;
 	private String description;
 	private String status;
 }

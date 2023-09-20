@@ -2,7 +2,7 @@ package com.cibertec.QuickSale.model;
 
 public class Customer {
 
-	private long idCustomer;
+	private int idCustomer;
 	private String fullName;
 	private String Dni;
 	private int edad;

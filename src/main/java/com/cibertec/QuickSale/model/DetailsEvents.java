@@ -5,11 +5,9 @@ import java.sql.Time;
 
 public class DetailsEvents {
 
-	private long idDetailsEvents;
+	private int idDetailsEvents;
 	private String description;
 	private String title;
-	private Date date;
-	private Time time;
 	private String importante;
 	private String link;
 	private String comentarios;

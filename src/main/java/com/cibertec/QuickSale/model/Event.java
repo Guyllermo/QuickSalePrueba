@@ -4,8 +4,8 @@ import java.sql.Date;
 
 public class Event {
 
-	private long idEvent;
-	private long idCategory;
+	private int idEvent;
+	private int idCategory;
 	private String title;
 	private String description;
 	private Date dateEvent;
