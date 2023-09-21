@@ -1,5 +1,6 @@
 package com.cibertec.QuickSale.model;
 
+
 public class Customer {
 
 	private int idCustomer;
