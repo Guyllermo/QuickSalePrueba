@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
@@ -25,8 +26,8 @@ public class Sale {
 	private int Quantity;
 	private String status;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_Payment", referencedColumnName = "idPayment")
-	private Payment payment;
+	@ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_Event", referencedColumnName = "idEvent")
+	private Event event;
 	
 }
