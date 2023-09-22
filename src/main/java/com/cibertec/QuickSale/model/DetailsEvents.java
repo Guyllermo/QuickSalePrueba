@@ -19,12 +19,14 @@ public class DetailsEvents {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idDetailsEvents;
+	
 	private String description;
 	private String title;
 	private String importante;
 	private String link;
 	private String comentarios;
 	private String urlImageRef;
+	private String status;
 	
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_Event", referencedColumnName = "idEvent")

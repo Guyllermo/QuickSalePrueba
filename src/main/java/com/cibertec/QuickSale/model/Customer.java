@@ -20,6 +20,7 @@ public class Customer {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idCustomer;
+	
 	private String fullName;
 	private String Dni;
 	private int edad;
@@ -28,7 +29,7 @@ public class Customer {
 	private String status;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_DetailsEvents", referencedColumnName = "idDetailsEvents")
+    @JoinColumn(name = "id_detailsevents", referencedColumnName = "idDetailsEvents")
 	private DetailsEvents detailsevent;
 	
 }

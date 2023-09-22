@@ -17,7 +17,9 @@ public class Payment {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idPayment;
+	
 	private String name;
+	private String status;
 	
 	
 	@ManyToOne(cascade = CascadeType.ALL)

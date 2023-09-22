@@ -20,6 +20,7 @@ public class Sale {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idSale;
+	
 	private Date saleDate;
 	private String operationNumber;
 	private double total;
@@ -27,7 +28,7 @@ public class Sale {
 	private String status;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_Event", referencedColumnName = "idEvent")
+    @JoinColumn(name = "id_event", referencedColumnName = "idEvent")
 	private Event event;
 	
 }
